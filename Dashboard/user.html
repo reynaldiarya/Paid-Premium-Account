@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a accumsan nunc. Nunc eu dignissim erat, at dictum arcu. Curabitur ornare sed felis eget placerat. In hac habitasse platea dictumst."
+    />
+    <meta name="keywords" content="Reynaldi Arya Bavista" />
+    <meta name="author" content="Reynaldi Arya Bavista" />
+    <title>Reynaldi Arya Bavista</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="font-body bg-[#f2f7ff]">
+    <section>
+      <button
+        data-drawer-target="sidebar"
+        data-drawer-toggle="sidebar"
+        aria-controls="sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-5 text-sm text-[#595959] hover:bg-[#2947a9] hover:text-white rounded-lg sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      >
+        <span class="sr-only">Open sidebar</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+          ></path>
+        </svg>
+      </button>
+      <div
+        id="sidebar"
+        class="fixed top-0 left-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      >
+        <div class="h-full px-10 py-4 overflow-y-auto bg-white">
+          <button id="close" class="absolute right-10 top-7 md:hidden">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <img class="w-3/4" src="assets/images/logo.png" alt="" />
+          <ul class="space-y-3 mt-10">
+            <li>
+              <a
+                href="/"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-grip"></i>
+                <span class="ms-3">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="transaction.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-money-bills"></i>
+                <span class="ms-3">Transaction</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="product.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-box-open"></i>
+                <span class="ms-3">Product</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="ms-3">Article</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="user.html"
+                class="flex items-center p-3 px-5 text-white rounded-lg bg-[#2947a9] group duration-300"
+              >
+                <i class="fa-solid fa-users"></i>
+                <span class="ms-3">User</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="p-4 sm:ml-72">
+        <div class="p-4 rounded-t-md">
+          <h2 class="text-2xl font-bold mb-5">User</h2>
+          <div class="grid place-items-end">
+            <button class="bg-[#2947a9] text-white py-2 px-4 rounded my-3">
+              Add User
+            </button>
+          </div>
+          <div class="relative overflow-x-auto sm:rounded-t-md">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500"
+            >
+              <thead class="text-md text-[#595959] bg-gray-100">
+                <tr>
+                  <th scope="col" class="px-6 py-4">ID</th>
+                  <th scope="col" class="px-6 py-4">Name</th>
+                  <th scope="col" class="px-6 py-4">Email</th>
+                  <th scope="col" class="px-6 py-4">Phone Number</th>
+                  <th scope="col" class="px-6 py-4">Status</th>
+                  <th scope="col" class="px-6 py-4">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="bg-white border-b-2">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    0000004
+                  </th>
+                  <td class="px-6 py-4">Zaq</td>
+                  <td class="px-6 py-4">zaqkyuti@gmail</td>
+                  <td class="px-6 py-4">088888888888</td>
+                  <td class="px-6 py-4 text-green-500">Verified</td>
+                  <td class="px-6 py-4 text-blue-500"><a href="#">Edit</a></td>
+                </tr>
+                <tr class="bg-white border-b-2">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    0000003
+                  </th>
+                  <td class="px-6 py-4">Husen</td>
+                  <td class="px-6 py-4">husenimut@gmail</td>
+                  <td class="px-6 py-4">0882515151</td>
+                  <td class="px-6 py-4 text-green-500">Verified</td>
+                  <td class="px-6 py-4 text-blue-500"><a href="#">Edit</a></td>
+                </tr>
+                <tr class="bg-white border-b-2">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    0000002
+                  </th>
+                  <td class="px-6 py-4">Fiki</td>
+                  <td class="px-6 py-4">fikialim@gmail</td>
+                  <td class="px-6 py-4">0882141241</td>
+                  <td class="px-6 py-4 text-red-500">Not Verified</td>
+                  <td class="px-6 py-4 text-blue-500"><a href="#">Edit</a></td>
+                </tr>
+                <tr class="bg-white border-b-2">
+                  <th
+                    scope="row"
+                    class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                  >
+                    0000001
+                  </th>
+                  <td class="px-6 py-4">Prama</td>
+                  <td class="px-6 py-4">bosprama@gmail</td>
+                  <td class="px-6 py-4">0882566141241</td>
+                  <td class="px-6 py-4 text-green-500">Verified</td>
+                  <td class="px-6 py-4 text-blue-500"><a href="#">Edit</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="flex items-center justify-between border-t rounded-b-md border-gray-200 bg-white px-4 py-3 sm:px-6"
+          >
+            <div class="flex flex-1 justify-between sm:hidden">
+              <a
+                href="#"
+                class="relative inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+                >Previous</a
+              >
+              <a
+                href="#"
+                class="relative ml-3 inline-flex items-center rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+                >Next</a
+              >
+            </div>
+            <div
+              class="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between"
+            >
+              <div>
+                <p class="text-sm text-gray-700">
+                  Showing
+                  <span class="font-medium">1</span>
+                  to
+                  <span class="font-medium">1</span>
+                  of
+                  <span class="font-medium">4</span>
+                  results
+                </p>
+              </div>
+              <div>
+                <nav
+                  class="isolate inline-flex -space-x-px rounded-md shadow-sm"
+                  aria-label="Pagination"
+                >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0"
+                  >
+                    <span class="sr-only">Previous</span>
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <!-- Current: "z-10 bg-indigo-600 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600", Default: "text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:outline-offset-0" -->
+                  <a
+                    href="#"
+                    aria-current="page"
+                    class="relative z-10 inline-flex items-center bg-[#2947a9] px-4 py-2 text-sm font-semibold text-white focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    >1</a
+                  >
+                  <a
+                    href="#"
+                    class="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-100 focus:z-20 focus:outline-offset-0"
+                  >
+                    <span class="sr-only">Next</span>
+                    <svg
+                      class="h-5 w-5"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div class="sm:ml-72 p-8 py-6">
+          <p class="text-[#595959]">
+            Built by Reynaldi Arya with ♥ in Surabaya. Copyright 2024
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sidebarButton = document.querySelector(
+          '[data-drawer-toggle="sidebar"]'
+        );
+        const sidebar = document.getElementById("sidebar");
+        const close = document.getElementById("close");
+        const body = document.body;
+
+        sidebarButton.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.toggle("-translate-x-full");
+        });
+
+        // Close sidebar when clicking outside of it
+        close.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.add("-translate-x-full");
+        });
+
+        body.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.add("-translate-x-full");
+        });
+      });
+    </script>
+  </body>
+</html>

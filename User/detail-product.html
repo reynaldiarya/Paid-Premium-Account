@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <title>Canva Premium Shared</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <a href="/"><img src="assets/images/logo.png" alt="" /></a>
+        <div class="kanan" id="navbar">
+          <li><a href="/catalog.html">Catalog</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li>
+            <a class="btn" href="/cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i> Cart</a
+            >
+          </li>
+        </div>
+        <a href="javascript:void(0);" class="hamburger" onclick="navbar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </ul>
+    </nav>
+    <!-- <section class="search-product">
+      <div class="wrap-search">
+        <input type="text" id="search" placeholder="Cari produk..." />
+        <button onclick="search()"><i class="fa fa-search"></i></button>
+      </div>
+    </section> -->
+    <section class="detail-product">
+      <div class="detail-product-image">
+        <img src="assets/images/canva.jpg" alt="Bersama Memperbaiki" />
+      </div>
+      <div class="container-card" style="background-color: white">
+        <div class="product-category">
+          <span>Akun Premium</span>
+        </div>
+        <h2>Canva Premium Shared</h2>
+        <div class="product-price" style="border-top: 1px #000">
+          <p>Rp25.000</p>
+        </div>
+        <div class="product-description">
+          <li>Canva Premium</li>
+          <li>Sistem Invite Sesuai Email</li>
+          <li>Dijamin Tanpa Ada Error</li>
+          <li>Setiap Bulan Ganti Team</li>
+          <li>Sertakan Email Canva di Catatan/Notes Saat Checkout</li>
+        </div>
+        <div class="quantity-product">
+          <!-- <button class="btn btn-left">-</button> -->
+          <input
+            type="number"
+            placeholder="Quantity"
+            value="1"
+            min="1"
+            class="quantity-input-box"
+          />
+          <!-- <button class="btn btn-right">+</button> -->
+          <button class="buy-now"><a href="cart.html">Buy Now</a></button>
+        </div>
+      </div>
+    </section>
+    <h2 class="related-product-title">Related Product</h2>
+    <section class="related-product">
+      <div class="product">
+        <img src="assets/images/canva.jpg" alt="Bersama Memperbaiki" />
+        <div class="container-card" style="background-color: white">
+          <div class="product-category">
+            <span>Akun Premium</span>
+          </div>
+          <div class="product-title">
+            <a href=""> Canva Premium Private </a>
+          </div>
+          <div class="product-price">
+            <p>Rp250.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/images/envato.png" alt="Bersama Memperbaiki" />
+        <div class="container-card" style="background-color: white">
+          <div class="product-category">
+            <span>Akun Premium</span>
+          </div>
+          <div class="product-title">
+            <a href=""> Envato Elements Shared </a>
+          </div>
+          <div class="product-price">
+            <p>Rp35.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/images/windscribe.jpeg" alt="Bersama Memperbaiki" />
+        <div class="container-card" style="background-color: white">
+          <div class="product-category">
+            <span>Akun Premium</span>
+          </div>
+          <div class="product-title">
+            <a href=""> WindScribe Premium Shared </a>
+          </div>
+          <div class="product-price">
+            <p>Rp30.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/images/envato.png" alt="Bersama Memperbaiki" />
+        <div class="container-card" style="background-color: white">
+          <div class="product-category">
+            <span>Akun Premium</span>
+          </div>
+          <div class="product-title">
+            <a href=""> Envato Elements Private</a>
+          </div>
+          <div class="product-price">
+            <p>Rp80.000</p>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <img src="assets/images/lordicon.jpg" alt="Bersama Memperbaiki" />
+        <div class="container-card" style="background-color: white">
+          <div class="product-category">
+            <span>Akun Premium</span>
+          </div>
+          <div class="product-title">
+            <a href=""> LordIcon Premium </a>
+          </div>
+          <div class="product-price">
+            <p>Rp100.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="card-grid">
+        <div class="card">
+          <div class="container-card">
+            <img src="assets/images/logo-white.png" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus dolor purus non enim praesent elem
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <h4 class="footer-title">Main Office</h4>
+          <div class="container-card">
+            <p>
+              <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina,
+              Delaware 10299
+            </p>
+            <p><i class="fa-solid fa-phone"></i> +84 1102 2703</p>
+            <a href="mailto:iniemail@gmail.com"
+              ><i class="fa-solid fa-envelope"></i> hello@thebox.com</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <h4 class="footer-title">Useful Links</h4>
+          <div class="container-card">
+            <a href="/tentang-kami.html">Our Services</a>
+            <a href="/kontak.html">Our Team</a>
+            <a href="/bekerja.html">Portfolio</a>
+          </div>
+        </div>
+        <div class="card">
+          <h4 class="footer-title">Socials</h4>
+          <div class="social-card">
+            <a href="/kebijakan-privasi.html"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="/hak-cipta.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="/ketentuan.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="/kebijakan-komunitas.html"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        Built by Reynaldi Arya with ♥ in Surabaya. Copyright 2024
+      </p>
+    </footer>
+  </body>
+  <script src="assets/js/script.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <!-- <script>
+    $(document).ready(function () {
+      $(".btn-left").on("click", function () {
+        $(".quantity-input-box").val(
+          parseInt($(".quantity-input-box").val()) - 1
+        );
+      });
+      $(".btn-right").on("click", function () {
+        $(".quantity-input-box").val(
+          parseInt($(".quantity-input-box").val()) + 1
+        );
+      });
+    });
+  </script> -->
+</html>
