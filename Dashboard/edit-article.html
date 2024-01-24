@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a accumsan nunc. Nunc eu dignissim erat, at dictum arcu. Curabitur ornare sed felis eget placerat. In hac habitasse platea dictumst."
+    />
+    <meta name="keywords" content="TheBox" />
+    <meta name="author" content="TheBox" />
+    <title>TheBox</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="font-body bg-[#f2f7ff]">
+    <section>
+      <button
+        data-drawer-target="sidebar"
+        data-drawer-toggle="sidebar"
+        aria-controls="sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-5 text-sm text-[#595959] hover:bg-[#2947a9] hover:text-white rounded-lg sm:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      >
+        <span class="sr-only">Open sidebar</span>
+        <svg
+          class="w-6 h-6"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+          ></path>
+        </svg>
+      </button>
+      <div
+        id="sidebar"
+        class="fixed top-0 left-0 z-40 w-72 h-screen transition-transform -translate-x-full sm:translate-x-0"
+      >
+        <div class="h-full px-10 py-4 overflow-y-auto bg-white">
+          <button id="close" class="absolute right-10 top-7 md:hidden">
+            <i class="fa-solid fa-x"></i>
+          </button>
+          <img class="w-3/4" src="assets/images/logo.png" alt="" />
+          <ul class="space-y-3 mt-10">
+            <li>
+              <a
+                href="/"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-grip"></i>
+                <span class="ms-3">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="transaction.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-money-bills"></i>
+                <span class="ms-3">Transaction</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="product.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-box-open"></i>
+                <span class="ms-3">Product</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="article.html"
+                class="flex items-center p-3 px-5 text-white rounded-lg bg-[#2947a9] group duration-300"
+              >
+                <i class="fa-solid fa-newspaper"></i>
+                <span class="ms-3">Article</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="user.html"
+                class="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
+              >
+                <i class="fa-solid fa-users"></i>
+                <span class="ms-3">User</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="p-4 sm:ml-72">
+        <div class="p-4 rounded-t-md">
+          <h2 class="text-2xl font-bold mb-5">Edit Article</h2>
+          <div class="relative overflow-x-auto sm:rounded-t-md">
+            <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+              <div class="space-y-12">
+                <div class="border-b border-gray-900/10 pb-12">
+                  <h2 class="text-base font-semibold leading-7 text-gray-900">
+                    Edit Article
+                  </h2>
+                  <div
+                    class="mt-10 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6"
+                  >
+                    <div class="col-span-full">
+                      <label
+                        for="title"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Title</label
+                      >
+                      <div class="mt-2">
+                        <input
+                          id="title"
+                          name="title"
+                          type="title"
+                          autocomplete="title"
+                          class="block w-full rounded-md border-0 py-1.5 pl-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#2947a9] sm:text-sm sm:leading-6 focus-visible:outline-none"
+                          value="Gerakan Lingkungan dan Buruh Mesti Bersatu, Sebab Perjuangan Iklim adalah Perjuangan Kelas"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-span-full">
+                      <label
+                        for="content"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Content</label
+                      >
+                      <div class="mt-2">
+                        <textarea id="content" name="content" rows="3">
+<p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                            tristique congue arcu in mollis. Fusce non felis at ante hendrerit
+                            vestibulum. Pellentesque aliquet venenatis orci, ac pulvinar justo
+                            sagittis et. Pellentesque sed sollicitudin odio, ut facilisis risus.
+                            Sed eget mi sollicitudin, blandit sapien eu, fringilla dui. Sed
+                            sagittis quam nec nisl dapibus blandit. Aliquam dictum pharetra lorem
+                            ac volutpat. Praesent aliquam feugiat felis, ac pretium quam commodo
+                            ut.
+                          </p></br>
+                          <p>
+                            Pellentesque accumsan tortor erat, ut molestie elit suscipit eu.
+                            Vivamus vitae posuere magna. Interdum et malesuada fames ac ante ipsum
+                            primis in faucibus. Aliquam erat volutpat. Maecenas hendrerit tortor
+                            eu ante pretium, non venenatis ex suscipit. Pellentesque eu enim non
+                            arcu accumsan tincidunt sit amet vel elit. Phasellus ac ornare est, in
+                            semper odio. Nullam pharetra ex massa, ut commodo massa sagittis et.
+                            Suspendisse feugiat efficitur aliquam. Cras eu nibh nec nulla pulvinar
+                            ornare. Etiam ac ligula urna. Aliquam vel dolor efficitur, imperdiet
+                            justo eu, consequat nisi. Proin feugiat mauris eu neque maximus, eget
+                            euismod risus lacinia.
+                          </p></br>
+                          <p>
+                            Quisque porta magna sit amet vestibulum dictum. Donec vehicula dolor
+                            id mi luctus, sed ullamcorper erat blandit. Nullam sed mauris a quam
+                            vestibulum egestas eget et massa. Integer id sollicitudin ligula.
+                            Maecenas tristique, diam vel facilisis rhoncus, nulla ligula placerat
+                            augue, id vulputate elit libero id ex. Nullam at lectus ut mi dapibus
+                            mattis. Quisque ut ligula et augue ultricies consectetur non at magna.
+                            Vestibulum quis elit volutpat, placerat tellus eu, maximus nibh.
+                          </p></br>
+                          <p>
+                            Donec vel turpis et ipsum consequat finibus in non dolor. In ut
+                            molestie orci, ut sodales lorem. Maecenas sagittis odio at arcu
+                            elementum sollicitudin. Nullam justo velit, auctor at viverra id,
+                            tempus a eros. Nunc sodales sit amet lorem a tempor. Aliquam sit amet
+                            libero vel augue interdum dignissim et ac purus. Donec elementum
+                            venenatis ante, quis hendrerit lorem molestie at. Morbi in commodo
+                            lacus. Quisque elementum pellentesque eleifend.
+                          </p>
+                          <img src="assets/images/article-7.png" alt="" />
+                          <p>
+                            Mauris turpis purus, elementum nec erat sit amet, scelerisque pulvinar
+                            nisl. Praesent et sollicitudin arcu. Vestibulum ante ipsum primis in
+                            faucibus orci luctus et ultrices posuere cubilia curae; Quisque eros
+                            nibh, scelerisque at turpis quis, ornare tempus nulla. Vestibulum eget
+                            molestie risus. Suspendisse egestas nisi semper, pellentesque dui sed,
+                            pellentesque neque. Duis quis gravida eros. Sed consequat porta sem,
+                            aliquet posuere mi lobortis vitae. Cras non lacus efficitur, iaculis
+                            sapien at, sagittis augue. Mauris viverra enim at ex tincidunt
+                            hendrerit. Vestibulum ut nibh blandit, varius enim sed, venenatis
+                            ligula. Phasellus eget risus convallis, dignissim dolor porttitor,
+                            consectetur diam. In nec euismod dolor, quis ornare mi. Aenean risus
+                            tortor, ullamcorper eu nunc id, eleifend dictum turpis.
+                          </p></textarea
+                        >
+                      </div>
+                    </div>
+
+                    <div class="col-span-full">
+                      <label
+                        for="cover-photo"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Cover Photo</label
+                      >
+                      <div
+                        class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10"
+                      >
+                        <div class="text-center">
+                          <svg
+                            class="mx-auto h-12 w-12 text-gray-300"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                              clip-rule="evenodd"
+                            />
+                          </svg>
+                          <div
+                            class="mt-4 flex text-sm leading-6 text-gray-600"
+                          >
+                            <label
+                              for="file-upload"
+                              class="relative cursor-pointer rounded-md bg-white font-semibold text-[#2947a9] focus-within:outline-none focus-within:ring-2 focus-within:ring-[#2947a9] focus-within:ring-offset-2"
+                            >
+                              <span>Upload a file</span>
+                              <input
+                                id="file-upload"
+                                name="file-upload"
+                                type="file"
+                                class="sr-only"
+                              />
+                            </label>
+                            <p class="pl-1">or drag and drop</p>
+                          </div>
+                          <p class="text-xs leading-5 text-gray-600">
+                            PNG, JPG, GIF up to 10MB
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sm:col-span-3">
+                      <label
+                        for="status"
+                        class="block text-sm font-medium leading-6 text-gray-900"
+                        >Status</label
+                      >
+                      <div class="mt-2">
+                        <select
+                          id="status"
+                          name="status"
+                          autocomplete="status-name"
+                          class="block w-full rounded-md border-0 py-1.5 px-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-[#2947a9] sm:max-w-xs sm:text-sm sm:leading-6 focus-visible:outline-none"
+                        >
+                          <option>Active</option>
+                          <option>Not Active</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 flex items-center justify-end gap-x-6">
+                <a
+                  href="article.html"
+                  type="button"
+                  class="text-sm font-semibold leading-6 text-gray-900"
+                >
+                  Cancel
+                </a>
+                <button
+                  type="submit"
+                  class="rounded-md bg-[#2947a9] px-3 py-2 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2947a9]"
+                >
+                  Edit Article
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <footer>
+        <div class="sm:ml-72 p-8 py-6">
+          <p class="text-[#595959]">
+            Built by Reynaldi Arya with ♥ in Surabaya. Copyright 2024
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sidebarButton = document.querySelector(
+          '[data-drawer-toggle="sidebar"]'
+        );
+        const sidebar = document.getElementById("sidebar");
+        const close = document.getElementById("close");
+        const body = document.body;
+
+        sidebarButton.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.toggle("-translate-x-full");
+        });
+
+        // Close sidebar when clicking outside of it
+        close.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.add("-translate-x-full");
+        });
+
+        body.addEventListener("click", function (event) {
+          event.stopPropagation();
+          sidebar.classList.add("-translate-x-full");
+        });
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor5/41.0.0/ckeditor.min.js"
+      integrity="sha512-wUIXhC8y6f2oaRBWcU8GiYU3u9oZ84Sg7AExs1wyCdjlsX9CBKnyqVDMmPq3ORpbk1l9myelrl1yRYo7yzW0Dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      ClassicEditor.create(document.querySelector("#content")).catch(
+        (error) => {
+          console.error(error);
+        }
+      );
+    </script>
+  </body>
+</html>

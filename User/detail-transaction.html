@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
-    <title>Transaction History</title>
+    <title>Detail Transaction</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -37,28 +37,67 @@
       style="background-image: url('assets/images/transaction-history.jpg')"
     >
       <div>
-        <h1>Transaction History</h1>
+        <h1>Detail Transaction</h1>
       </div>
     </section>
-    <section class="transaction-history">
-      <table>
-        <tr>
-          <th>Order ID</th>
-          <th>Date</th>
-          <th>Total</th>
-          <th>Status</th>
-          <th>Action</th>
-        </tr>
-        <tr>
-          <td>#97</td>
-          <td>2024-01-15 08:00:00</td>
-          <td>Rp100.000</td>
-          <td>Completed</td>
-          <td>
-            <button><i class="fa-solid fa-eye" style="color: white;"></i></button>
-          </td>
-        </tr>
-      </table>
+    <section class="transaction-detail">
+      <div class="grid">
+        <div>
+          <label for="">Order ID</label>
+          <input disabled type="text" value="#97" />
+        </div>
+        <div>
+          <label for="">Date</label>
+          <input disabled type="text" value="2024-01-15 08:00:00" />
+        </div>
+        <div>
+          <label for="">Status</label>
+          <input disabled type="text" value="Completed" />
+        </div>
+      </div>
+    </section>
+    <section class="transaction-detail">
+      <div>
+        <label for="">Item</label>
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+          <tr>
+            <td>Canva Premium Shared</td>
+            <td>Rp25.000</td>
+            <td>x2</td>
+            <td>Rp50.000</td>
+          </tr>
+          <tr>
+            <td>Netflix Premium Shared</td>
+            <td>Rp25.000</td>
+            <td>x2</td>
+            <td>Rp50.000</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="transaction-detail">
+      <div>
+        <label for="">Account Detail</label>
+        <textarea disabled name="" id="" style="width: 100%">
+  Akun Netflix:
+  Email: akuganteng@gmail
+  Password: Tes12345
+  Email: akuganteng2@gmail
+  Password: Tes12345
+
+  Akun Canva:
+  Email: akuganteng@gmail
+  Password: Tes12345
+  Email: akuganteng2@gmail
+  Password: Tes12345
+        </textarea>
+      </div>
     </section>
     <footer>
       <div class="card-grid">

@@ -52,6 +52,11 @@ a {
   font-size: 16px;
 }
 
+textarea {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
 a:link {
   color: #14171f;
   text-decoration: none;
@@ -784,6 +789,28 @@ select {
   cursor: pointer;
 }
 
+/* Trasanction Detail */
+.transaction-detail {
+  margin: 50px 10%;
+  overflow-x: auto;
+}
+
+.transaction-detail .grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 35px;
+}
+
+.transaction-detail textarea, input[type="text"], input[type="email"], input[type="text-area"], input[type="password"], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -986,6 +1013,10 @@ footer > .card-grid > .card > .social-card > a {
     margin-top: 50px;
     padding: 25px;
     border-radius: 5px;
+  }
+
+  .transaction-detail .grid{
+    grid-template-columns: auto;
   }
 
   footer {
