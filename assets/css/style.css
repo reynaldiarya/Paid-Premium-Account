@@ -184,7 +184,7 @@ nav > ul > div > li > a {
   display: grid;
   margin-top: 0px;
   padding: 0px 10%;
-  height: 325px;
+  /* height: 325px; */
   grid-template-columns: auto;
   background-size: cover;
   background-position: center center;
@@ -976,7 +976,7 @@ footer > .card-grid > .card > .social-card > a {
   }
 
   .catalog {
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    display: block;
   }
 
   .detail-product {
