@@ -1,9 +1,6 @@
 # Paid Premium Account Workshop  
 
-Proyek ini dibuat sebagai bagian dari mata kuliah **Workshop UI/UX**. Tujuan proyek ini adalah untuk merancang dan mengembangkan antarmuka pengguna yang menarik, responsif, dan fungsional dengan memanfaatkan elemen desain modern.  
-
-## Deskripsi Proyek  
-Proyek ini mencakup perancangan antarmuka yang berfokus pada fitur akun premium berbayar, termasuk halaman pendaftaran, informasi paket, dan fitur unggulan yang didapatkan oleh pengguna premium. Semua elemen dirancang dengan pendekatan responsif untuk memastikan pengalaman pengguna yang optimal di berbagai perangkat.  
+Proyek ini mencakup perancangan tampilan antarmuka untuk website penjualan produk digital berupa akun premium berbayar. Semua elemen antarmuka dirancang secara responsif untuk memberikan pengalaman visual yang optimal di berbagai perangkat. Proyek ini dibuat sebagai bagian dari mata kuliah Workshop UI/UX, dengan fokus pada pengembangan desain yang modern, menarik, dan fungsional.
 
 ## Fitur Utama  
 - **Halaman Landing**: Halaman utama yang menampilkan informasi tentang akun premium, fitur, dan manfaat.  
@@ -24,19 +21,15 @@ Proyek ini menggunakan dua sumber desain utama dari Figma:
 2. **Blogging Website UI**  
    - **Link**: [Blogging Website UI](https://www.figma.com/file/X7OssuT8PEpYau2GWI0S1y/Blogging-Website-UI-(Community)-(Community)?type=design&node-id=1-95&mode=design&t=JMm05gY5AnDVM9Vg-0)  
 
-## Teknologi yang Digunakan  
-- **Figma**: Untuk desain antarmuka pengguna.  
-- **HTML/CSS/JS**: Untuk implementasi dan pengembangan prototipe. 
-
 ## Langkah-Langkah Implementasi  
 1. **Analisis Kebutuhan**  
-   - Mengidentifikasi elemen desain yang sesuai untuk mendukung fitur akun premium.  
+   Mengidentifikasi elemen desain yang sesuai untuk mendukung fitur akun premium.  
 2. **Perancangan Desain**  
-   - Membuat wireframe dan prototipe menggunakan Figma.  
+   Membuat wireframe dan prototipe menggunakan Figma.  
 3. **Implementasi Kode**  
-   - Menerapkan desain ke dalam kode HTML, CSS, dan JavaScript.  
+   Menerapkan desain ke dalam kode HTML, CSS, dan JavaScript.  
 4. **Pengujian Responsif**  
-   - Menguji antarmuka pada berbagai perangkat dan memastikan fungsi bekerja dengan baik.  
+   Menguji antarmuka pada berbagai perangkat dan memastikan fungsi bekerja dengan baik.  
 
 ## Cara Mengakses Proyek  
 1. Clone repositori ini.  
